@@ -5,7 +5,7 @@ It uses an ATmega328P (MU variant) microcontroller running at 16MHz, has onboard
 
 ~~I didn't expose any unused pins because there was no space to route more.~~
 
-I will expose only unused ADC pins.
+I will expose SPI pins for ISP.
 
 It also includes battery charging circuitry with an onboard BMS, a MicroUSB port, simple controls (5-button 4 way stick), and fully custom PCB hardware designed FROM SCRATCH.
 
