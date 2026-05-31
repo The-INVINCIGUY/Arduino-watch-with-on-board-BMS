@@ -31,7 +31,7 @@ Changes from Revision 1
 Added:
 
 1. RV-3028-C7 ultra-low-power RTC
-
+2. I2C and respective pull-ups
    * Datasheet: https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf
 
 Removed:
