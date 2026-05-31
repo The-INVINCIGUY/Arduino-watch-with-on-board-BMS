@@ -22,7 +22,6 @@ Current Goals:
 
 Known Risks:
 
-* First PCB revision
 * Sleep and interrupt firmware not yet tested
 * RTC integration not yet tested on hardware
 
@@ -31,7 +30,7 @@ Changes from Revision 1
 Added:
 
 1. RV-3028-C7 ultra-low-power RTC
-2. I2C and respective pull-ups
+2. I2C and its respective pull-up resistors
    * Datasheet: https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf
 
 Removed:
@@ -41,10 +40,10 @@ Removed:
 
 Changed:
 
-1. Switch SW1 moved from ATmega328P ADC0/PC0 (pin 23) to PB0 (pin 12, Arduino D8).
+1. A pin from switch SW1 moved from ATmega328P ADC0/PC0 (pin 23) to PB0 (pin 12, Arduino D8).
 2. ATmega328P PD2/INT0 (pin 4) connected to RV-3028-C7 INT output for RTC wake-up interrupts.
 3. ATmega328P PC4/SDA and PC5/SCL dedicated to RV-3028-C7 I²C communication.
-4. ADC0, ADC1, ADC2, ADC3, ADC5, and ADC7 reserved as spare test points / expansion pins and should be exposed where practical.
+4. ~~ADC0, ADC1, ADC2, ADC3, ADC5, and ADC7 reserved as spare test points / expansion pins and should be exposed where practical.~~
 
 Design Notes:
 
