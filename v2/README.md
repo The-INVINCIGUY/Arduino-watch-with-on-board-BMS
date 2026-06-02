@@ -1,3 +1,4 @@
+EDIT: Found and fixed I2C pullup resistors going to GND instead of VCC
 Arduino Watch with On-Board BMS
 
 Revision 2
