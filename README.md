@@ -1,3 +1,5 @@
+<img width="1116" height="1089" alt="image" src="https://github.com/user-attachments/assets/d560a9f2-28cf-4c0d-8dd7-79ecf8c61f32" />
+
 ## This is no ordinary watch.
 
 
