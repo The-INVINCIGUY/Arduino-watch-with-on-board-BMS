@@ -1,4 +1,4 @@
-<img width="1116" height="1089" alt="image" src="https://github.com/user-attachments/assets/d560a9f2-28cf-4c0d-8dd7-79ecf8c61f32" />
+
 
 ## This is no ordinary watch.
 
@@ -10,3 +10,4 @@ So basically it's a mini Arduino UNO with components permanently attatched to so
 The monochrome display and small size makes it perfect for minimalists or people who want to look cool.
 
 Also my first PCB ever!
+<img width="1116" height="1089" alt="image" src="https://github.com/user-attachments/assets/d560a9f2-28cf-4c0d-8dd7-79ecf8c61f32" />
