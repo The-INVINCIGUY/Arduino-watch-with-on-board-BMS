@@ -22,7 +22,8 @@ The PCB integrates the following subsystems:
 
 * SPI bus used for OLED communication
 * I2C bus used for RTC communication
-* USB/ISP used for programming and serial debugging
+* USB-UART interface used for programming and serial debugging
+* ISP pads exposed for direct programming and fuse configuration
 * GPIO used for user input, speaker drive, and RTC interrupt handling
 
 ## PCB Design
@@ -30,9 +31,9 @@ The PCB integrates the following subsystems:
 The PCB was designed from scratch in EasyEDA Pro.
 
 * Custom schematic and PCB layout
-* Four-layer PCB (2 routing and planezone layers)
-* Dedicated ground planezone
-* Dedicated power planezone
+* Four-layer PCB (2 routing and plane layers)
+* Dedicated ground plane
+* Dedicated power plan
 * Compact watch-sized layout
 * Exposed programming and debugging pads
 
@@ -46,11 +47,11 @@ The firmware is written for the ATmega328P and focuses on low-power operation wh
 
 * RV-3028 provides primary timekeeping
 * Time is read over I2C
-* RTC alarms can wake the microcontroller from sleep from the RTC's INT pin to the ATMega328P's pin2
+* RTC alarms can wake the microcontroller from sleep from the RTC's INT pin to the ATMega328P's pin 2
 
 ### Power Management
 
-* ATmega328P sleep modes used during inactivity
+* ATmega328P sleep modes used during inactivity (between screen updates, waking, etc.)
 * Wake-up via RTC alarm or user input
 * RTC maintains accurate time independently of MCU operation
 
@@ -71,10 +72,9 @@ The watch operates directly from a rechargeable LiPo battery.
 
 Functional features include:
 
-* USB charging support
-* Battery voltage monitoring
+* USB charging support via TP4056
+* Battery voltage monitoring via ADC6
 * Low-power sleep operation
-* RTC-backed timekeeping during sleep
 
 ## PCB Source Files
 
@@ -86,24 +86,18 @@ Included files:
 * Pick-and-place files
 * Schematic exports
 
-## Engineering Challenges
-
-Key challenges addressed during development:
-
+## Goals
 * Compact component placement beneath the OLED display
-* Integration of USB programming, charging, RTC, display, and user input on a single PCB
+* Integration of USB programming, using correct components, charging, RTC, display, and user input on a single side of the PCB for cheaper PCBA
 * Low-power operation using RTC-assisted sleep modes
 * Battery voltage measurement without a dedicated regulated reference
 * Four-layer PCB design and routing
 
 ## Future Improvements
 
-* Additional watch faces
-* Stopwatch and timer functions
-* Expanded alarm functionality
 * Optional microSD support
 * Further power consumption optimisation
 
 ## Notes
 
-This project represents a complete custom watch platform built around the ATmega328P. Both the hardware and firmware are developed specifically for this design, allowing full control over every aspect of the system.
+This project represents a complete custom watch platform built around the ATmega328P. Both the hardware and firmware (bare minimum time with sleep has been done) are developed specifically for this design, allowing full control over every aspect of the system.
