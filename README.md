@@ -13,7 +13,7 @@ The PCB integrates the following subsystems:
 * Microcontroller: ATmega328P-MU (8-bit AVR architecture)
 * Display: 0.96" 128×64 SPI OLED
 * RTC: RV-3028 ultra-low-power real-time clock
-* Power system: Rechargeable LiPo battery with on-board charging circuit
+* Power system: Rechargeable LiPo battery with on-board charging circuit (TP4056)
 * USB interface: CH340C USB-to-UART bridge for programming and debugging
 * Audio output: On-board speaker for alarms and notifications
 * User input: 5-way navigation switch
@@ -22,7 +22,7 @@ The PCB integrates the following subsystems:
 
 * SPI bus used for OLED communication
 * I2C bus used for RTC communication
-* UART used for programming and serial debugging
+* USB/ISP used for programming and serial debugging
 * GPIO used for user input, speaker drive, and RTC interrupt handling
 
 ## PCB Design
@@ -30,9 +30,9 @@ The PCB integrates the following subsystems:
 The PCB was designed from scratch in EasyEDA Pro.
 
 * Custom schematic and PCB layout
-* Four-layer PCB stack-up
-* Dedicated ground plane
-* Dedicated power plane
+* Four-layer PCB (2 routing and planezone layers)
+* Dedicated ground planezone
+* Dedicated power planezone
 * Compact watch-sized layout
 * Exposed programming and debugging pads
 
@@ -40,13 +40,13 @@ This project includes complete schematic capture, footprint selection, PCB layou
 
 ## Firmware Behaviour
 
-The firmware is written for the ATmega328P and focuses on low-power operation and responsive user interaction.
+The firmware is written for the ATmega328P and focuses on low-power operation while maintaining responsive user interaction.
 
 ### Timekeeping
 
 * RV-3028 provides primary timekeeping
 * Time is read over I2C
-* RTC alarms can wake the microcontroller from sleep
+* RTC alarms can wake the microcontroller from sleep from the RTC's INT pin to the ATMega328P's pin2
 
 ### Power Management
 
@@ -62,7 +62,7 @@ The firmware is written for the ATmega328P and focuses on low-power operation an
 
 ### Audio Output
 
-* Speaker driven using GPIO and PWM
+* Speaker driven using GPIO and 32KHz PWM (pin3)
 * Used for alarms, notifications, and feedback tones
 
 ## Battery and Power System
