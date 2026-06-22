@@ -108,3 +108,5 @@ Included files:
 ## Notes
 
 This project represents a complete custom watch platform built around the ATmega328P. Both the hardware and firmware (bare minimum time with sleep has been done) are developed specifically for this design, allowing full control over every aspect of the system.
+<img width="1486" height="1054" alt="image" src="https://github.com/user-attachments/assets/4b6c5a51-ae37-4c22-a433-6c6dcd13bc6f" />
+
