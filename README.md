@@ -1,10 +1,13 @@
 # Custom ATmega328P Watch
+<img width="1352" height="1288" alt="image" src="https://github.com/user-attachments/assets/01a85437-5e72-4bb8-9071-c2a6e92456a6" />
 
 ## System Overview
 
 This project is a custom-designed watch built around the ATmega328P-MU microcontroller and RV-3028 real-time clock. The design integrates timekeeping, display, battery charging, audio output, user input, and USB programming onto a single PCB.
 
 The watch is designed as a self-contained embedded system with all peripherals integrated directly onto the board.
+
+<img width="818" height="1210" alt="image" src="https://github.com/user-attachments/assets/e635294f-1364-45de-92b6-c6ff8c7088fc" />
 
 ## Hardware Architecture
 
@@ -86,12 +89,16 @@ Included files:
 * Pick-and-place files
 * Schematic exports
 
-## Goals
+## Goals (DONE)
 * Compact component placement beneath the OLED display
 * Integration of USB programming, using correct components, charging, RTC, display, and user input on a single side of the PCB for cheaper PCBA
 * Low-power operation using RTC-assisted sleep modes
 * Battery voltage measurement without a dedicated regulated reference
 * Four-layer PCB design and routing
+
+
+<img width="768" height="1194" alt="Screenshot 2026-06-22 202952" src="https://github.com/user-attachments/assets/b1ebbcbe-72b6-4d61-ab15-f06a325539d0" />
+
 
 ## Future Improvements
 
