@@ -1,3 +1,4 @@
+https://pro.easyeda.com/editor#id=74cf1da5f7e14924bd2e12ac03711dfa,tab=*e35c6cf8f1f64433a3ec2ff9e5f4b07f@74cf1da5f7e14924bd2e12ac03711dfa
 https://oshwlab.com/the_invinciguy/project_voxouyoc
 # Custom ATmega328P Watch
 <img width="1352" height="1288" alt="image" src="https://github.com/user-attachments/assets/01a85437-5e72-4bb8-9071-c2a6e92456a6" />
@@ -5,6 +6,9 @@ https://oshwlab.com/the_invinciguy/project_voxouyoc
 ## System Overview
 
 This project is a custom-designed watch built around the ATmega328P-MU microcontroller and RV-3028 real-time clock. The design integrates timekeeping, display, battery charging, audio output, user input, and USB programming onto a single PCB.
+
+I made this because I a) wanted a portable programmable device, b) to show off what I programmed to my freinds easily and c) so I can at some point code some assembly in Opcode Studio (something I am making).
+Besides, I needed a watch anyways.
 
 The watch is designed as a self-contained embedded system with all peripherals integrated directly onto the board.
 
